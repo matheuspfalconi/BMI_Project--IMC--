@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-br">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Cálculo IMC</title>
+
+		<link rel="stylesheet" href="generalStyle.css">
+		<link rel="stylesheet" href="style.css">
+			
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			
+		<script src="calculo.js"></script>
+
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+	  	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	   	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	   	<![endif]-->
+	</head>
+
+	<body>
+		<div id="app">
+			<main>
+				<div class="content">
+					<div class="title_calculo">
+						<h1>Calcule o seu IMC: </h1>
+					</div>
+
+					<div class="div_calculo">
+						<div class="input_calculo">
+							<div class="weight">
+								<label>Weight</label>
+								<input type="number" name="weight"><span>kg</span>
+							</div>
+
+							<div class="height">
+								<label>Height</label>
+								<input type="number" name="height"><span>cm</span>
+							</div>
+						</div>
+
+						<div class="result_calculo">
+							<p>21</p>
+							<p>BMI</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="div_table">
+					<h1>Qual é o seu IMC ideal?</h1>
+
+					<div class="table">
+						<ul>
+							<li class="item_table">
+								<p>IMC (kg/m2)</p>
+								<p>Classificação</p>
+							</li>
+
+							<li class="item_table">
+								<p>< 18,5</p>
+								<p>Baixo Peso</p>
+							</li>
+
+							<li class="item_table">
+								<p>18,5 - 24,9</p>
+								<p>Peso Saudável</p>
+							</li>
+
+							<li class="item_table">
+								<p>25,0 - 29,9</p>
+								<p>Sobrepeso</p>
+							</li>
+
+							<li class="item_table">
+								<p>> 30</p>
+								<p>Obesidade</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
