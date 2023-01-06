@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 			
 		<script src="calculo.js"></script>
 
@@ -27,61 +28,71 @@
 	<body>
 		<div id="app">
 			<main>
-				<div class="content">
-					<div class="title_calculo">
-						<h1>Calcule o seu IMC: </h1>
-					</div>
-
-					<div class="div_calculo">
-						<div class="input_calculo">
-							<div class="weight">
-								<label>Weight</label>
-								<input type="number" name="weight"><span>kg</span>
-							</div>
-
-							<div class="height">
-								<label>Height</label>
-								<input type="number" name="height"><span>cm</span>
-							</div>
-						</div>
-
-						<div class="result_calculo">
-							<p>21</p>
-							<p>BMI</p>
-						</div>
-					</div>
+				<div class="title_content">
+					<h1>Descubra seu Índice de Massa Corporal</h1>	
 				</div>
 
-				<div class="div_table">
-					<h1>Qual é o seu IMC ideal?</h1>
+				<div class="content">
+					<div class="div_left">
+						<div class="title_calculo">
+							<h2>Calcule o seu IMC: </h2>
+						</div>
 
-					<div class="table">
-						<ul>
-							<li class="item_table">
-								<p>IMC (kg/m2)</p>
-								<p>Classificação</p>
-							</li>
+						<div class="div_calculo">
+							<div class="input_calculo">
+								<div class="weight">
+									<p>Weight</p>
+									<input type="number" name="weight" id="input_weight" placeholder="0"><span>kg</span>
+								</div>
 
-							<li class="item_table">
-								<p>< 18,5</p>
-								<p>Baixo Peso</p>
-							</li>
+								<div class="height">
+									<p>Height</p>
+									<input type="number" name="height" id="input_height" placeholder="0"><span>cm</span>
+								</div>
+							</div>
 
-							<li class="item_table">
-								<p>18,5 - 24,9</p>
-								<p>Peso Saudável</p>
-							</li>
+							<div class="result_calculo">
+								<p id="result">00</p>
+								<p>BMI</p>
+							</div>
 
-							<li class="item_table">
-								<p>25,0 - 29,9</p>
-								<p>Sobrepeso</p>
-							</li>
+							<div class="div_button">
+								<input type="button" name="submit" value="CALCULAR" onclick="calcular()">
+							</div>
+						</div>
+					</div>
 
-							<li class="item_table">
-								<p>> 30</p>
-								<p>Obesidade</p>
-							</li>
-						</ul>
+					<div class="div_right">
+						<h2>Encontre a sua classificação: </h2>
+
+						<div class="table">
+							<ul>
+								<li class="item_table">
+									<p>IMC</p>
+									<p>Classificação</p>
+								</li>
+
+								<li class="item_table">
+									<p>< 18,5</p>
+									<p>Baixo Peso</p>
+								</li>
+
+								<li class="item_table">
+									<p>18,5 - 24,9</p>
+									<p>Peso Saudável</p>
+								</li>
+
+								<li class="item_table">
+									<p>25,0 - 29,9</p>
+									<p>Sobrepeso</p>
+								</li>
+
+								<li class="item_table">
+									<p>> 30</p>
+									<p>Obesidade</p>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</main>
